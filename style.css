@@ -1,0 +1,200 @@
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-hidden{
+  display: none;
+}
+p{
+  text-align: center;
+  margin: 0;
+}
+
+h2{
+  margin: 1em 0 0.5em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+header{
+  background-color: #47177a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  color: white;
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.7);
+  height: 4em;
+}
+
+footer{
+  background-color:  rgba(255, 255, 255, 1.0);
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  color: white;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0.5em 0;
+  line-height: 1;
+  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.25em;
+  padding-left: 0.25em;
+}
+
+button[name="good"]{
+  background-color: #3fc47a;
+  box-shadow: 0 0.5em 0 #30955d;
+}
+
+button[name="neutral"]{
+  background-color:  #3498DB;
+  box-shadow: 0 0.5em 0 #1a53ff;
+}
+
+button[name="bad"]{
+  background-color: #f45353;
+  box-shadow: 0 0.5em 0 #b14141;
+}
+
+button{
+  margin-bottom: 1.5em;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  padding: 0.75em 2em;
+  color: #ffffff;
+  transition: all 50ms ease-out;
+  width: 100%;
+}
+
+.dropdown{
+  margin: 0.5em auto 0;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: bold;
+  outline: none;
+  border-radius: 0.5em;
+  padding: 1em;
+  transition: all 50ms ease-out;
+  border: solid #3498DB medium;
+  text-align: center;
+  width: 20em;
+}
+
+.top-section{
+  min-height: 30em;
+  max-height: 80em;
+  padding-top: 4em;
+  padding-bottom: 8em;
+}
+
+section{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fefefe;
+  transition: transform 1s 0.4s ease-out;
+  margin: 1em 1em 1em;
+}
+
+#numero-jugadors{
+  width: 2em;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.25em 0;
+  letter-spacing: 0;
+}
+
+#never_text{
+  font-size: 2em;
+  font-weight: lighter;
+}
+.bottom{
+  align-items: center; 
+  width: 100%;
+  position: absolute;
+  border: 1em;
+  bottom: 2em;
+}
+
+.switch{
+  font-size: 1.5em;
+}
+
+/* Hide the default checkbox */
+.switch input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the slider (switch) */
+.switch .slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+/* Style the slider (switch) when checked */
+.switch input[type="checkbox"]:checked + .slider {
+  background-color: #007bff;
+}
+
+/* Style the slider (switch) knob */
+.switch .slider::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Move the slider (switch) knob to the right when checked */
+.switch input[type="checkbox"]:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  overflow: hidden; /* Hide the overflowing content */
+}
+
+.slide-in-content {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Initially, the content is positioned outside the container on the left side */
+  width: 100%;
+  height: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  transition: left 0.5s ease; /* Use a CSS transition for smooth animation */
+}
+
+.container:hover .slide-in-content {
+  left: 0; /* When hovering over the container, slide the content in */
+}
