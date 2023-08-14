@@ -36,6 +36,7 @@ function GoToNever() {
   showMenu("never");
   document.getElementById('header_name').innerHTML = "Yo Nunca"
   document.getElementById('header').style.backgroundColor = "#b286e0"
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', '#b286e0');
   never = new Never(translator) 
   NeverNext()
 }
@@ -48,6 +49,7 @@ function GoToTwist(){
   showMenu("twist_options")
   document.getElementById('header_name').innerHTML = "TwistYou"
   document.getElementById('header').style.backgroundColor = "#ed8824"
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ed8824');
 }
 
 function GoToTwistPlayers() {
@@ -93,6 +95,7 @@ function GoToMenu(){
   showMenu("menu")
   document.getElementById('header_name').innerHTML = "TAJA"
   document.getElementById('header').style.backgroundColor = "#b14141"
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', '#b14141');
 }
 
 function init() {
